@@ -2,12 +2,12 @@ package corp.guia.app.alert.animals
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -47,12 +47,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun googleSignIn() {
-        val intent =  googleSignInClient.signInIntent
+        val intent = googleSignInClient.signInIntent
         googleSignInLauncher.launch(intent)
     }
 
     override fun onClick(view: View) {
-        when(view.id) {
+        when (view.id) {
             binding.btnSignIn.id -> googleSignIn()
             binding.btnSignOut.id -> googleSignOut()
         }

@@ -1,16 +1,11 @@
 package corp.guia.app.alert.animals
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import corp.guia.app.alert.animals.common.GoogleSignInHelper
 import corp.guia.app.alert.animals.databinding.ActivityPruebaBinding
 import corp.guia.app.alert.animals.viewmodel.GoogleSignInViewModel
-import java.security.Provider
 
 class PruebaActivity : AppCompatActivity() {
 
